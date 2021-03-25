@@ -1,3 +1,0 @@
-
-import pyopencl as cl
-
