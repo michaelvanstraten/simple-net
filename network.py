@@ -3,7 +3,6 @@ import time
 import json
 from matplotlib import pyplot as plt
 
-
 class Network:
     def __init__(self, size):
         self.__size = size
@@ -117,7 +116,7 @@ class Network:
                 batch_delta_biases.append(delta_biases)
 
             self.weights = [[[single_neoron_weigth-learning_rate*(sum(new_single_neoron_weight)/len(new_single_neoron_weight)) for single_neoron_weigth, new_single_neoron_weight in zip(neoron_weights, zip(
-                *new_neoron_weights))] for neoron_weights, new_neoron_weights in zip(layer_weights, zip(*new_layer_weights))]for layer_weights, new_layer_weights in zip(self.weights, zip(*batch_delta_weights))]
+                *new_neoron_weights))] for neoron_weights, new_neoron_weights in zip(layer_weights, zip(*new_layer_weights))] for layer_weights, new_layer_weights in zip(self.weights, zip(*batch_delta_weights))]
             self.biases = [[neoron_bias-learning_rate*(sum(new_neoron_bias)/len(new_neoron_bias)) for neoron_bias, new_neoron_bias in zip(
                 layer_bias, zip(*new_layer_bias))] for layer_bias, new_layer_bias in zip(self.biases, zip(*batch_delta_biases))]
 
