@@ -3,6 +3,7 @@ import time
 import json
 from matplotlib import pyplot as plt
 
+
 class Network:
     def __init__(self, size):
         self.__size = size
