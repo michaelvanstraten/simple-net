@@ -82,6 +82,9 @@ This is our forward loop:
         return outputs 
 ```
 Now that works and all, but if we actually give the network some data, for example [1, 0], and we want it to flip the two input the network probably performs terribly. So to train the network how to do that task, we have to manipulate its parameters. In this case, we have to find the right weights and biases for the 4 layers after the input. We could just do our first step of generating a new random weight over and over again until we get the right result for the input, but that would take a really long time and would be really inefficient. It would be better i we knew how our weight and biases are actually wrong with respect to our current input and output. Luckily, this is possible 
+
+#Documentation is in progress - sorry
+
 ```python
 def __Backpropagate(self, inputs=[], targets=[]):
     outputs = inputs
