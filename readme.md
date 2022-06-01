@@ -1,5 +1,4 @@
 # Simple Net
-- a simple no dependency neural network framework
 
 In the Winter of 2019 I started an interest in neural networks. I took a look at TensorFlow but didn't really understand what I was doing, so I decided to write my own little framework to understand the underling math and implementation.
 
